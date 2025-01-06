@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("/src/font/Roboto-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font: "Roboto", serif;
+  --gray-color-fill: #E3E3E3;
+  --bg-color: #C4C4C4;
+  --repo-color: #E27BEB;
+}
+
+
+body {
+  font-family: var(--font);
+  font-size: 48px;
+  margin: 20px;
+  background-color: var(--bg-color);
+}
+
+.main__container {
+  position: relative;
+  width: 60vw;
+}
+
+#autocomplete {
+  width: 100%;
+  height: auto;
+  padding: 8px;
+  font-size: 48px;
+  box-sizing: border-box;
+  font-family: var(--font);
+  border: none;
+}
+
+.autocomplete-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border: 1px solid #ccc;
+  background: #fff;
+  z-index: 10;
+  max-height: 150px;
+  display: none;
+}
+
+.autocomplete-item {
+  padding: 8px;
+  cursor: pointer;
+  border: 2px solid black;
+  background-color: var(--gray-color-fill);
+}
+
+.autocomplete-item:hover {
+  background: #65cdf9;
+  transition: background-color 0.2s ease;
+}
+
+.repo-list {
+  width: 60vw;
+}
+
+.repo-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1.5px solid black;
+  margin-bottom: 10px;
+  background-color: var(--repo-color);
+  position: relative;
+  margin-top: 10px;
+}
+
+.repo-info div {
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.remove-icon {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.remove-icon:hover {
+  transform: scale(1.06);
+}
+
+
+
