@@ -53,11 +53,13 @@ function addRepo(repo) {
       <div>Stars: ${repo.stargazers_count}</div>
     </div>
     <img src="./src/img/cross.svg" alt="Remove" class="remove-icon">
-  `;
-  item.querySelector('.remove-icon').addEventListener('click', () => item.remove());
-  repoList.appendChild(item);
-  autocompleteInput.value = '';
-  autocompleteList.style.display = 'none';
+  `
+  item
+    .querySelector(".remove-icon")
+    .addEventListener("click", () => item.remove())
+  repoList.appendChild(item)
+  autocompleteInput.value = ""
+  autocompleteList.style.display = "none"
 }
 
 autocompleteInput.addEventListener(
