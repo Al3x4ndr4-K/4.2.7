@@ -52,7 +52,7 @@ function addRepo(repo) {
       <div>Owner: ${repo.owner.login}</div>
       <div>Stars: ${repo.stargazers_count}</div>
     </div>
-    <img src="./src/img/cross.svg" alt="Remove" class="remove-icon">
+    <img src="./src/img/cross.svg" alt="Remove repo" class="remove-icon">
   `
   item
     .querySelector(".remove-icon")
